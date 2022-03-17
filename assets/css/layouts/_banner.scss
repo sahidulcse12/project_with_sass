@@ -1,0 +1,30 @@
+
+
+.banner-content {
+    color: $white;
+    h2 {
+        font-size: 37px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    p{
+        @include para-style;
+    }
+    .box-btn{
+        @extend .btn;
+        margin-right: 15px;
+        background-color:$primary-color;
+        &:hover{
+            background-color:salmon;
+            transition: .5s;
+        }
+    }
+    .border-btn{
+        @extend .btn;
+        &:hover{
+            background-color:$primary-color;
+            transition: .5s;
+        }
+    }
+}
+

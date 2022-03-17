@@ -1,0 +1,98 @@
+@import 'color';
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width:100%;
+    margin:0 auto;
+}
+
+.fix::before,fix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+img{
+    max-width:100%;
+    vertical-align: middle;
+}
+
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &::before{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $dark;
+        opacity: .75;
+        z-index: -1;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:$dark;
+    transition: .3s;
+}
+
+.btn{
+    color:$white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight:500;
+    padding:10px 20px;
+    display:inline-block;
+    border:1px solid #F9421A;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box-btn{
+    @extend .btn;
+}
+
+@mixin para-style{
+    font-size:18px;
+    font-weight: normal;
+}
+
+/* padding and margin */
+
+@for $i from 1 through 10{
+    .pt-#{$i*10}{
+        padding-top:$i*10px;
+    }
+    .pb-#{$i*10}{
+        padding-bottom:$i*10px;
+    }
+    .mt-#{$i*10}{
+        margin-top:$i*10px;
+    }
+    .mb-#{$i*10}{
+        margin-bottom:$i*10px;
+    }
+}
+
+/* Alignment */
+
+$lists: left,center,right,justify;
+
+@each $list in $lists{
+    .text-#{$list}{
+        text-align:$list;
+    }
+}
