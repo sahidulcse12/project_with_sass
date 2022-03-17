@@ -1,0 +1,27 @@
+
+.about-area{
+    overflow:hidden;
+}
+.single-about {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    padding: 20px 10px;
+    border: 1px solid lightgray;
+    h4 {
+        font-size: 25px;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+    a{
+        color:$dark;
+    }
+    p{
+        @include para-style;
+    }
+    
+}
+
+.single-about:last-child {
+    margin-right: 0px;
+}

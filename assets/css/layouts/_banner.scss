@@ -10,21 +10,6 @@
     p{
         @include para-style;
     }
-    .box-btn{
-        @extend .btn;
-        margin-right: 15px;
-        background-color:$primary-color;
-        &:hover{
-            background-color:salmon;
-            transition: .5s;
-        }
-    }
-    .border-btn{
-        @extend .btn;
-        &:hover{
-            background-color:$primary-color;
-            transition: .5s;
-        }
-    }
+    
 }
 
