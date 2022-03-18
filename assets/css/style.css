@@ -357,6 +357,8 @@ body {
 
 .about-area {
   overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .single-about {
@@ -384,5 +386,219 @@ body {
 
 .single-about:last-child {
   margin-right: 0px;
+}
+
+.portfolio-area {
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.portfolio {
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32%;
+  margin-right: 2%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #333;
+  width: 100%;
+  padding: 20px 0;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 25px;
+}
+
+.services-area {
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.single-service {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 5px;
+}
+
+.single-service h4 {
+  text-transform: uppercase;
+}
+
+.single-service i {
+  background-color: purple;
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.single-service i:hover {
+  background-color: goldenrod;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.single-service:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.blog-area {
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.single-blog {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.single-blog .blog-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+.single-blog h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.single-blog p {
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.single-blog:last-child {
+  margin-right: 0;
+}
+
+.cta-area h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.cta-area p {
+  color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.contact-area {
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.single-contact {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+
+.single-contact i {
+  color: #333;
+  font-size: 25px;
+}
+
+.single-contact h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.single-contact p {
+  font-weight: 450;
+}
+
+.single-contact span {
+  font-weight: 600;
+}
+
+.single-contact:last-child {
+  margin-right: 0;
+}
+
+.contact-form {
+  margin-top: 50px;
+  float: left;
+  width: 60%;
+  margin-right: 3%;
+  margin-left: 2%;
+  padding-left: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.contact-form input[type="submit"] {
+  width: auto;
+  background: tomato;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-map {
+  float: right;
+  margin-top: 50px;
+  width: 35%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.footer-area {
+  overflow: hidden;
+  background: grey;
+  padding: 20px 0;
+}
+
+.footer-area p {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

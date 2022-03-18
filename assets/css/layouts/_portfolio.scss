@@ -1,0 +1,35 @@
+
+
+.portfolio-area{
+    overflow:hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.portfolio {
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32%;
+    margin-right: 2%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    h4 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        background-color: $dark;
+        width: 100%;
+        padding: 20px 0;
+        text-transform: capitalize;
+        color: $white;
+        font-size: 25px;
+    }
+}
+

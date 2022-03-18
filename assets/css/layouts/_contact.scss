@@ -1,0 +1,65 @@
+
+.contact-area{
+    overflow: hidden;
+    background-color:$bg_gray;
+}
+.single-contact {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    i {
+        color: #333;
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p {
+        font-weight: 450;
+    }
+    span {
+        font-weight: 600;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.contact-form {
+    margin-top: 50px;
+    float: left;
+    width: 60%;
+    margin-right: 3%;
+    margin-left:2%;
+    padding-left: 10px; 
+    input, 
+    textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+input[type="submit"] {
+    width: auto;
+    background:tomato;
+    padding:10px 20px;
+    cursor: pointer;
+}
+}
+
+.contact-map {
+    float: right;
+    margin-top: 50px;
+    width: 35%;
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+

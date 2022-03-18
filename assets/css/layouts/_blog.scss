@@ -1,0 +1,40 @@
+
+
+
+
+.blog-area{
+    overflow:hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.single-blog {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    padding:10px;
+    background-color: $bg_gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    .blog-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+    }
+    h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 10px 0;
+        font-weight: 500;
+    }
+    p{
+        @include para-style;
+        padding-bottom: 10px;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
